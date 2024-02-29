@@ -64,19 +64,14 @@ export default function Home() {
           >
             <div className="flex w-24 h-24 items-center">
               <div className="w-max relative">
-                <Image
-                  src={car.image}
-                  width={85}
-                  height={85}
-                  alt="Picture of the author"
-                />
+                <Image src={car.image} width={85} height={85} alt={car.name} />
                 {car.avaliable ? (
                   <Image
                     className="absolute top-0 left-0 lg:hidden"
                     src="/indicators.png"
                     width={24}
                     height={24}
-                    alt="Picture of the author"
+                    alt="avaliable icon"
                   />
                 ) : (
                   <Image
@@ -84,7 +79,7 @@ export default function Home() {
                     src="/remove.png"
                     width={24}
                     height={24}
-                    alt="Picture of the author"
+                    alt="Not avaliable icon"
                   />
                 )}
               </div>
