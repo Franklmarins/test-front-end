@@ -48,6 +48,14 @@ export default function Home() {
 
   return (
     <main className="container mx-auto">
+      <div className="flex items-center justify-between p-4 bg-gray-50 text-gray-500 mt-4 md:hidden ">
+        <h2>CAR</h2>
+        <h2></h2>
+        <h2>NEXT RESERVATION</h2>
+        <h2>STATUS</h2>
+        <h2>RATING</h2>
+        <h2>ACTIONS</h2>
+      </div>
       <ul className="flex flex-col items-center">
         {data.map((car) => (
           <li
