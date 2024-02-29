@@ -68,7 +68,7 @@ export default function Home() {
                 {car.avaliable ? (
                   <Image
                     className="absolute top-0 left-0 lg:hidden"
-                    src="/indicators.svg"
+                    src="/iindicators.svg"
                     width={24}
                     height={24}
                     alt="avaliable icon"
